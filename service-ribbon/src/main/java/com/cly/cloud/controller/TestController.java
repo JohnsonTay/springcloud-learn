@@ -22,7 +22,7 @@ public class TestController {
     @Autowired
     HelloService helloService;
 
-    @RequestMapping("/test")
+    @RequestMapping("/hello")
     public String testHello(@RequestParam String name){
         return helloService.testService(name);
     }
