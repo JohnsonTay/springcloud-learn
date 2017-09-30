@@ -36,6 +36,7 @@
     <module>service-feign</module>
     <module>service-zuul</module>
     <module>config-server</module>
-    <module>config-client</module>
+    <module>config-client8881</module>
+    <module>config-client8882</module>
   </modules>
 </project>
