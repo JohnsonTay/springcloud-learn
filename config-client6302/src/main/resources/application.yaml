@@ -1,0 +1,38 @@
+server:
+  port: 6302
+spring:
+  ## 应用名
+  application:
+    name: config-client
+  ## 获取配置文件配置
+  cloud:
+    config:
+      label: master
+      profile: local
+      discovery:
+        enabled: true
+        service-id: config-server
+    ## 消息跟踪
+    bus:
+      trace:
+        enabled: true
+
+  ## MQ配置
+  rabbitmq:
+    addresses: 10.16.31.78
+    port: 5672
+    username: clyming
+    password: clyming
+    virtual-host: clyming
+
+
+## 集群配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6001/eureka/
+
+## 刷新时，关闭安全验证
+management:
+  security:
+    enabled: false

@@ -1,12 +1,12 @@
 server:
-  port: 8769
+  port: 6202
 spring:
   application:
     name: service-zuul
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://localhost:6001/eureka/
 zuul:
   routes:
     api-a:

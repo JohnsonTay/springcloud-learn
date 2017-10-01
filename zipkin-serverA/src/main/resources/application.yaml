@@ -1,0 +1,7 @@
+server:
+  port: 6402
+spring:
+  zipkin:
+    base-url: http://localhost:6401
+  application:
+    name: zipkin-server-hi
